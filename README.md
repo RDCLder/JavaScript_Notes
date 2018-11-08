@@ -1,1 +1,9 @@
-# Web_Development_Notes
+# Web Development Notes
+
+## JavaScript
+- Fundamentals
+- Flow Control
+
+## HTML
+
+## CSS
