@@ -5,6 +5,6 @@
 - Commenting
   - Comments are
   - Syntax:
-    - ```/* [comment] */
+    - ```/* [comment] */```
       - Useful when a comment contains line breaks.
     - ```// [comment]```
