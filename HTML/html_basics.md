@@ -18,4 +18,21 @@
 - HTML General Rule
   - Tags are used to enclose and structure content.
     - Syntax: ```<tagName> Content </tagName>```
-    - e.g.
+    - e.g. ```<h1>This is header text</h1>```
+
+- HTML Boilerplate
+  - Code that every HTML document initiates with.
+    - Type ```html``` and hit tab
+    
+  - Structure
+    - HTML
+      - The HTML root element.  All other elements must be enclosed by this element.
+    - Head
+        - Provides general information (metadata) including title of webpage.
+        - Includes links/definitions of scripts and style sheets (CSS).
+    - Body
+      - The contents of the document.
+
+- Resources
+  - [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML): Mozilla Developer Network.
+  - [FreeCodeCamp.com](https://www.freecodecamp.org/): Covers full-stack web development.
