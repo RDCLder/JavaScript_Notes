@@ -1,4 +1,4 @@
-# HTML Basics
+# Basic HTML
 
 ## Objectives
 
