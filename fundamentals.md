@@ -29,7 +29,18 @@
 ## Conditional Logic
 
 - If/else if/else
-  - Syntax: ```if``` ```else if``` ```else```
+  - Syntax:
+    ```javascript
+    if (statement) {
+      code block
+    }
+    else if (statement) {
+      code block
+    }
+    else (statement) {
+      code block
+    }
+    ```
 
 - Switch Statements
   - Switch statements are for expressions that have many potential matches instead of a single match in the case of if/else if/else statements.
