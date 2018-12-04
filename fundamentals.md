@@ -24,6 +24,8 @@
     }
     ```
 
+---
+
 ## Conditional Logic
 
 - If/else if/else
@@ -48,7 +50,9 @@
       actionDefault;
   }
 
-## Conditional Logic
+---
+
+## Flow Control
 
 - Looping
   - While
@@ -85,7 +89,7 @@
 
 - A collection is a data structure that stores different data types.
 
-### Array
+### Arrays
 
 - Array
   - A list of data types
@@ -144,7 +148,7 @@ Array Methods
   }
   ```
   
-### Object
+### Objects
 
 - Object
   - Similar to a dictionary in python, an object stores key-value pairs in {}.
