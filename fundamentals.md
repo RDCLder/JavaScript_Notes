@@ -152,14 +152,15 @@ Array Methods
 
 - Object
   - Similar to a dictionary in python, an object stores key-value pairs in {}.
-  - Syntax: ```var objectName {key:value}```
+  - Syntax: ```var objectName {key:value, key:value};```
+    - Keys must always be strings.
   - e.g.
   ```javascript
   var object1 {
-    "Item 1": value1,
-    "Item 2": value2,
-    "Item 3": value3
-  }
+    Item1: value1,
+    Item2: value2,
+    Item3: value3
+  };
   ```
 
 - Appending objects
