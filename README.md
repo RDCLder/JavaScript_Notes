@@ -1,7 +1,7 @@
 # Web Development Notes
 
 ## JavaScript
-- Fundamentals
+- [Fundamentals](./JavaScript/fundamentals.md)
 - Flow Control
 
 ## HTML
