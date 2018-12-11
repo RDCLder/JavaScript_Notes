@@ -83,7 +83,8 @@
 
 ## Prototypes
 
-- JavaScri[t is a prototype-based language and inheritance is based on prototypes.
+- JavaScript is a prototype-based language and inheritance is based on prototypes.
   - Each object has a prototype object which acts as a template object from which methods and properties are inherited.
     - i.e. The prototype object is a class blueprint that defines initial attributes and methods.
-    - Prototype objects can inherit from other prototype objects
+    - Prototype Chain: Prototype objects can inherit from other prototype objects.
+  - By default, prototypes are empty, but they can be appended.
