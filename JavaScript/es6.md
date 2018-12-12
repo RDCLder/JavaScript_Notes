@@ -110,10 +110,27 @@
     - Arrow functions are used for non-method functions and cannot be used as constructors.
     - There is no binding of arguments
   - Syntax
-    ```javascript
-    (param1, param2, ..., paramN) => {statements}
-    ```
-  - e.g.
+    - General
+      ```javascript
+      (param1, param2, ..., paramN) => {statements}
+      ```
+    - Conditional (Ternary) Operator
+      ```javascript
+      (arguments) => {return (condition) ? output1 : output2}
+      
+      // This is equivalent to 
+      
+      (arguments) => {
+        if (condition == true) {
+          return output1
+        }
+        else {
+          return output2
+        }
+      }
+      ```
+      
+  - General Example
     ```javascript
     var materials = [
       'Hydrogen',
@@ -122,8 +139,42 @@
       'Beryllium'
     ];
 
-    console.log(materials.map(material => material.length));
-    // expected output: Array [8, 6, 7, 9]
+    console.log(materials.map(material => material.length)); // outputs [8, 6, 7, 9]
+    ```
+  - Ternary Operator Example
+    ```javascript
+    // General
+    
+    function(a){
+        if(a < 10){
+            return 'valid';
+        }else{
+            return 'invalid';
+        }
+    }
+    
+    // Using Ternary Operator
+    
+    (a) => {(a < 10) ? 'valid' : 'invalid'}
+    ```
+    
+  - Multiple Ternary Operators Example
+    ```javascript
+    // General
+    
+    function getIcon(area) {
+      if (area == 1) { 
+        return icon1; 
+      } else if (area == 2) { 
+        return icon2; 
+      }
+
+      return icon0;
+    }
+    
+    // Using Ternary Operator
+    
+    icon: (area == 1) ? icon1 : (area == 2) ? icon2 : icon0
     ```
 
 - JavaScript ```this``` vs Python ```self```
