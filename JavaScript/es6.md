@@ -88,11 +88,13 @@
     - ES6
       ```javascript
       let luke = {occupation: "jedi", father: "anakin"};
-      let {occ, dad} = luke;
+      let {father, occupation} = luke;
       
       console.log(occ); // "jedi"
       console.log(dad); // "anakin"
       ```
+      - Notice that even though the positions of ```father``` and ```occupation``` were switched for the assignment, they still retain their corresponding values.
+      - This is because objects (or dictionaries in Python) are indexed only by key names and not by position or numbers.
 
 ---
       
