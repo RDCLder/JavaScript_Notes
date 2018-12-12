@@ -194,8 +194,60 @@
     
 ## Classes
 
-- Prior to ES6, "classes" were implemented by creating a constructor function and adding properties by extending the prototype:
-  - ES5
-    ```javascript
-    
-    ```
+- Creating Classes
+  - Prior to ES6, "classes" were implemented by creating a constructor function and adding properties by extending the prototype:
+    - ES5
+      ```javascript
+      function Person(name, age, gender) {
+        this.name   = name;
+        this.age    = age;
+        this.gender = gender;
+      }
+      Person.prototype.incrementAge = function () {
+        return this.age += 1;
+      };
+      ```
+    - ES5 Extended Classes
+      ```javascript
+      function Personal(name, age, gender, occupation, hobby) {
+        Person.call(this, name, age, gender);
+        this.occupation = occupation;
+        this.hobby = hobby;
+      }
+      Personal.prototype = Object.create(Person.prototype);
+      Personal.prototype.constructor = Personal;
+      Personal.prototype.incrementAge = function () {
+        Person.prototype.incrementAge.call(this);
+        this.age += 20;
+        console.log(this.age);
+      };
+      ```
+  - ES6 has updated OOP syntax to more closely resemble the syntax of other class-based OOP languages (e.g. Python)
+    - ES6
+      ```javascript
+      class Person {
+        constructor(name, age, gender) {
+            this.name   = name;
+            this.age    = age;
+            this.gender = gender;
+        }
+        incrementAge() {
+          this.age += 1;
+        }
+      }
+      ```
+    - ES6 Extended Classes
+      ```javascript
+      class Personal extends Person {
+        constructor(name, age, gender, occupation, hobby) {
+            super(name, age, gender);
+            this.occupation = occupation;
+            this.hobby = hobby;
+        }
+        incrementAge() {
+            super.incrementAge();
+            this.age += 20;
+            console.log(this.age);
+        }
+      }
+      ```
