@@ -87,11 +87,34 @@
     for (start; test; increment) {
       code block
     }
+    
+    // OR
+    
+    for (index in iterable) {
+      code block // index can be named anything
+    }
+    
+    // OR
+    
+    for (let item of iterable) {
+      code block // item can be named anything
+    }
     ```
     - e.g.
     ```javascript
     for (var count = 0; count < 10; count ++) {
-      console.log(count)
+      console.log(count) // Outputs 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+    }
+    
+    let itemArr = ["item1", 17, "item3"];
+    
+    for (n in itemArr) {
+      console.log(n); // Outputs 0, 1, 2
+      console.log(itemArr(n)); // Outputs item1, 17, item3
+    }
+    
+    for (let item of itemArr) {
+      console.log(item) // Outputs item1, 17, item3
     }
     ```
 ---
