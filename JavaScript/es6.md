@@ -130,52 +130,53 @@
       }
       ```
       
-  - General Example
-    ```javascript
-    var materials = [
-      'Hydrogen',
-      'Helium',
-      'Lithium',
-      'Beryllium'
-    ];
+  - Examples
+    - General
+      ```javascript
+      var materials = [
+        'Hydrogen',
+        'Helium',
+        'Lithium',
+        'Beryllium'
+      ];
 
-    console.log(materials.map(material => material.length)); // outputs [8, 6, 7, 9]
-    ```
-  - Ternary Operator Example
-    ```javascript
-    // General
-    
-    function(a){
-        if(a < 10){
-            return 'valid';
-        }else{
-            return 'invalid';
-        }
-    }
-    
-    // Using Ternary Operator
-    
-    (a) => {(a < 10) ? 'valid' : 'invalid'}
-    ```
-    
-  - Multiple Ternary Operators Example
-    ```javascript
-    // General
-    
-    function getIcon(area) {
-      if (area == 1) { 
-        return icon1; 
-      } else if (area == 2) { 
-        return icon2; 
+      console.log(materials.map(material => material.length)); // outputs [8, 6, 7, 9]
+      ```
+    - Ternary Operator Example
+      ```javascript
+      // General
+
+      function(a){
+          if(a < 10){
+              return 'valid';
+          }else{
+              return 'invalid';
+          }
       }
 
-      return icon0;
-    }
-    
-    // Using Ternary Operator
-    
-    icon: (area == 1) ? icon1 : (area == 2) ? icon2 : icon0
-    ```
+      // Using Ternary Operator
+
+      (a) => {(a < 10) ? 'valid' : 'invalid'}
+      ```
+
+    - Multiple Ternary Operators Example
+      ```javascript
+      // General
+
+      function getIcon(area) {
+        if (area == 1) { 
+          return icon1; 
+        } else if (area == 2) { 
+          return icon2; 
+        }
+
+        return icon0;
+      }
+
+      // Using Ternary Operator
+
+      icon: (area == 1) ? icon1 : (area == 2) ? icon2 : icon0
+      ```
 
 - JavaScript ```this``` vs Python ```self```
   - Python ```self```: An instance of the current object in the class method.
