@@ -29,7 +29,11 @@
     - It can be stored as a local file and referenced in the HTML file
     - It can be linked through a content-distributed network (CDN)
       ```html
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+      </script>
       ```
   - jQuery must be initiated with the following function:
     ```javascript
