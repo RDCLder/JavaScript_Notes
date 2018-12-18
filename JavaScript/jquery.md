@@ -272,7 +272,9 @@
       </div>
     </div>
     ```
-  
+
+---
+
 ## Events
 
 - **.click()**
@@ -332,7 +334,9 @@
       alert("Key press in an input!");
     });
     ```
-    
+
+---
+
 ## Effects
 
 - **.fadeOut(), .fadeIn(), & .fadeToggle()**
