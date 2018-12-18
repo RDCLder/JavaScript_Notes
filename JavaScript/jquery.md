@@ -46,7 +46,26 @@
     });
       ```
     - This is equivalent to using ```document.```
-    
+
+- Creating Elements
+  - Syntax
+    - General
+      ```var $elementName = $(<tag>);```
+      - jQuery elements must always be initiated with a ```$``` symbol.
+    - With Attributes
+      ```var $elementName = $(<tag>, {
+        "key": "value"
+      });```
+      - Object syntax is used.
+  - Examples
+    ```js
+    var $anchor = $('<a>', {
+      'class': 'nav-item',
+      'data-image': 'trigger',
+      'text': 'Click me!'
+    });
+    ```
+
 - Element selection
   - jQuery will return all matching elements in an array
   - Syntax:
@@ -196,4 +215,163 @@
     - Leaving the argument blank will return the value for all matching elements.
     - Providing an argument will replace the values for all matched elements.
   - Examples
+    ```js
+    $("input").val(""); // Resets everything in the input field to an empty string
+    ```
+
+- **.addClass()** & **.removeClass()**
+  - Utility:  Add a specified class to each matching element.
+  - Syntax:  ```element.addClass(className)``` & ```element.removeClass(className)```
+    - Multiple classes can be added/removed in the same argument by separating each className with a space
+      ```element.addClass(class1 class2 class3)```
+
+- **.toggleClass()**
+  - Utility:  Either add or removed the specified class to each matching element if the class was present/missing, respectively.
+  - Syntax:  ```element.toggleClass(className)```
+    - Multiple classes can be input in the same argument.
+  - Example
+    ```html
+    <div class="tumble bounce">Some text.</div>
+    ```
+    ```js
+    $("div").toggleClass("tumble"); // This removes the "tumble" class
+    $("div").toggleClass("hop"); // This adds the "hop" class
+    ```
+
+- **.append()**
+  - Utility:  Insert content, specified by the parameter, to the end of each matching element.
+  - Syntax:  ```element.append(content)```
+    - Content can include HTML to both create an element and append it in the same statement.
+    - Multiple arguments can be passed 
+  - Examples
+    ```html
+    <h2>Greetings</h2>
+    <div class="container">
+      <div class="inner">Hello</div>
+      <div class="inner">Goodbye</div>
+    </div>
+    ```
+    ```js
+    $(".inner" ).append( "<p>Test</p>");
+    // This inserts the enclosed <p> element into the two .inner elements.
+    ```
+    ```html
+    <h2>Greetings</h2>
+    <div class="container">
+      <div class="inner">
+        Hello
+        <p>Test</p>
+      </div>
+      <div class="inner">
+        Goodbye
+        <p>Test</p>
+      </div>
+    </div>
+    ```
   
+## Events
+
+- **.click()**
+  - Utility:  Add a click listener to matching elements.
+  - Syntax: ```element.click(function)```
+    - Can be used with any element.
+  - Example
+    ```html
+    <button>Click Me</button>
+    ```
+    ```js
+    $("button").click(() => {
+      alert("You clicked me!");
+      $(this).css("background", "red");
+    });
+    ```
+    - ```$(this)``` corresponds to the element to which the event listener is attached.
+
+- **.keypress()**, **.keydown()**, & **.keyup()**
+  - Utility:  Adds a keypress listener to matching elements.
+    - **.keypress()**:  Adds the listener to the middle of the keystroke between pressing down and releasing.
+    - **.keydown()**:  Adds the listener to the moment a key is pressed down.
+    - **.keyup()**:  Adds the listener to the moment after a key is released.
+  - Syntax: ```element.keypress(handler)```
+    - **.keypress()** only processes the character while the other two methods process the key itself
+  - Example
+    ```html
+    <form>
+      <fieldset>
+        <input id="target" type="text" value="Hello there">
+      </fieldset>
+    </form>
+    <div id="other">
+      Trigger the handler
+    </div>
+    ```
+    ```js
+    $('input[type = "text"]').keypress(function(){
+      alert("text input keypress!"); // This triggers the alert everytime a key is pressed when entering the input
+    });
+    ```
+
+- **.on()**
+  - Utility:  Adds an event listener for a specified event type.
+    - Other event listeners are only added for existing elements.
+    - **.on()** adds event listeners for all future elements as well.
+  - Syntax:  ```element.on("eventType", function)```
+  - Examples
+    ```js
+    // Click Event
+    $("submit").on("click", function() {
+      console.log("Another click"); // This logs a message anytime a button is clicked.
+    });
+    
+    // Keypress Event
+    $('input[type="text"]').on("keypress", function() {
+      alert("Key press in an input!");
+    });
+    ```
+    
+## Effects
+
+- **.fadeOut(), .fadeIn(), & .fadeToggle()**
+  - Utility
+    - **.fadeOut()**:  Fade the matching elements to transparent
+    - **.fadeIn()**:  Transform the matching elements from transparent to visible
+    - **.fadeToggle()**:  Transform the matching element to opposite of starting state
+  - Syntax:  ```element.fadeOut(duration, easing, complete)```
+    - ```duration```:  Number or string which determines how long the effect lasts (default is 4000 ms)
+    - ```easing```:  Type of effect to be used
+    - ```complete```:  Function to call when effect is complete (optional)
+  - Example
+  ```html
+  <div id="clickme">
+    Click here
+  </div>
+  <img id="book" src="book.png" alt="" width="100" height="123">
+  ```
+  ```js
+  $( "#clickme" ).click(function() {
+    $( "#book" ).fadeOut( "slow", function() {
+      // Animation complete.
+    });
+  });
+  ```
+  
+- **.slideDown(), .slideUp(), & .slideToggle()**
+  - Utility:  Display the matching elements with a sliding motion up or down
+  - Syntax:  ```element.slideDown(duration, options, complete)```
+    - ```duration```:  Number or string determining how long the effect lasts (default is 4000 ms)
+    - ```options```:  Different optional effects to run
+    - ```complete```:  Function to run once the animation is completed (optional)
+  - Examples
+  ```html
+  <div id="clickme">
+    Click here
+  </div>
+  <img id="book" src="book.png" alt="" width="100" height="123">
+  ```
+  ```js
+  $( "#clickme" ).click(function() {
+    $( "#book" ).slideDown( "slow", function() {
+      // Animation complete.
+    });
+  });
+  ```
