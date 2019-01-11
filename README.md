@@ -6,6 +6,7 @@
 - [Objected-Oriented Programming](./JavaScript/oop.md)
 - [ES6](./JavaScript/es6.md)
 - [jQuery](./JavaScript/jquery.md)
+- [API](./JavaScript/api.md)
 - [Miscellaneous](./JavaScript/misc.md)
 
 ## Node.js
