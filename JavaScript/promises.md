@@ -167,10 +167,6 @@
     ```js
     const db = pgp(config);
     ```
-  - Close connection
-    ```js
-    pgp.end()
-    ```
     
 - Database Query
   - Syntax:  ```db.method```
@@ -206,7 +202,12 @@
           console.log(result);
         });
       ```
-      
+  
+- Close connection
+  ```js
+  pgp.end()
+  ```
+  
 ### Protect Your Database
 
 - SQL Injection
