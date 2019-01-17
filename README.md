@@ -7,11 +7,13 @@
 - [ES6](./JavaScript/es6.md)
 - [jQuery](./JavaScript/jquery.md)
 - [API](./JavaScript/api.md)
-- [Promises](./JavaScript/promises.md)
 - [Miscellaneous](./JavaScript/misc.md)
 
 ## Node.js
 
 - [Node.js](./Node/node.md)
+- [Express.js](./Node/express.md)
+- [Socket.io](./Node/socket.md)
+- [Promises](./Node/promises.md)
 
 ## HTML/CSS
