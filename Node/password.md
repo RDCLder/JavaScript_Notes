@@ -36,9 +36,10 @@
       - [Documentation](https://nodejs.org/api/crypto.html#crypto_crypto)
       - Generates cryptographically strong pseudo-random data
       - Size argument is a number indicating the number of bytes to generate
-    ```js
-    var salt = crypto.randomBytes(20).toString('hex');
-    ```
+    - e.g.
+      ```js
+      var salt = crypto.randomBytes(20).toString('hex');
+      ```
   - Use an encryption algorithm
     ```js
     var key = pbkdf2.pbkdf2Sync(
