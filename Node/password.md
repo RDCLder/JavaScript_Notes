@@ -30,7 +30,9 @@
     var password = 'some-password'; // In this case, a password is being encrypted
     ```
   - Define the salt parameter
-    - ```crypto.randomBytes(size)```
+    - ```js
+      crypto.randomBytes(size)
+      ```
       - [Documentation](https://nodejs.org/api/crypto.html#crypto_crypto)
       - Generates cryptographically strong pseudo-random data
       - Size argument is a number indicating the number of bytes to generate
