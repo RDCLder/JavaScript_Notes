@@ -18,6 +18,10 @@
 - [Express.js](./Node/express.md)
 - [Socket.io](./Node/socket.md)
 - [Promises](./Node/promises.md)
+- Authentication
+  - [Password Encryption](./Node/password.md)
+  - [User Sessions](./Node/sessions.md)
+  - [Passport](./Node/passport.md)
 
 ---
 
