@@ -2,6 +2,14 @@
 
 ## General
 
+- An authentication middleware for Node.js.
+  - Can be integrated with any Express-based web app
+  - Supports a comprehensive set of strategies for authentication using either
+    - Username and password
+    - Facebook
+    - Twitter
+    - Much more
+
 - Dependencies
   - passport
   - passport-local
