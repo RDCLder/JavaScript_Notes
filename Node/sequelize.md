@@ -23,8 +23,11 @@
   - migration:generate Generates a new migration file [aliases: migration:create]
   - model:generate Generates a model and its migration [aliases: model:create]
   
-- [pg pg-hstore](https://www.npmjs.com/package/pg-hstore)
-  - node package for serializing and deserializing JSON data to hstore format
+- Dependencies
+  - [pg](https://www.npmjs.com/package/pg)
+    - Installs postgres
+  - [pg-hstore](https://www.npmjs.com/package/pg-hstore)
+    - For serializing and deserializing postgres JSON data to hstore format
   
 - Initialize Project
   - Initialize sequelize
