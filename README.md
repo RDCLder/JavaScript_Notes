@@ -18,6 +18,7 @@
 - [Express.js](./Node/express.md)
 - [Socket.io](./Node/socket.md)
 - [Promises](./Node/promises.md)
+- [Sequelize](./Node/sequelize.md)
 - Authentication
   - [Storing Passwords](./Node/password.md)
   - [User Sessions](./Node/sessions.md)
