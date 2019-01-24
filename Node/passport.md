@@ -2,6 +2,8 @@
 
 ## General
 
+- [Documentation](http://www.passportjs.org/docs/)
+
 - An authentication middleware for Node.js.
   - Can be integrated with any Express-based web app
   - Supports a comprehensive set of strategies for authentication using either
