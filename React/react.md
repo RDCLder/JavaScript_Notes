@@ -1,8 +1,8 @@
 # React.js
 
-- [Documentation](https://reactjs.org/docs/getting-started.html)
-
 ## General
+
+- [Documentation](https://reactjs.org/docs/getting-started.html)
 
 - React is an open-source, front-end library for building UI
   - The V in [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
