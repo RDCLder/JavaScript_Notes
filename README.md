@@ -27,7 +27,6 @@
 ### React.js & Redux
 
 - [React.js](./React/react.md)
-- [Redux](./React/redux.md)
 
 ---
 
