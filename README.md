@@ -24,9 +24,10 @@
   - [User Sessions](./Node/sessions.md)
   - [Passport](./Node/passport.md)
 
-### React.js
+### React.js & Redux
 
 - [React.js](./React/react.md)
+- [Redux](./React/redux.md)
 
 ---
 
