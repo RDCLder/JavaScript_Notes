@@ -24,11 +24,11 @@
   - [User Sessions](./Node/sessions.md)
   - [Passport](./Node/passport.md)
 
-### React.js & Redux
+### React & Redux
 
-- [React.js](./React/react.md)
+- [React](./React/react.md)
 
----
+### React Native
 
 ## Database
 
@@ -37,6 +37,6 @@
 - [PostgreSQL](./PostgreSQL/postgresql.md)
 - [Associations](./PostgreSQL/associations.md)
 
----
-
 ## HTML/CSS
+
+### Bootstrap
