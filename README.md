@@ -2,8 +2,6 @@
 
 ## JavaScript
 
-### General
-
 - [Fundamentals](./JavaScript/fundamentals.md)
 - [Higher Order Functions](./JavaScript/higher_functions.md)
 - [Objected-Oriented Programming](./JavaScript/oop.md)
@@ -12,7 +10,7 @@
 - [API](./JavaScript/api.md)
 - [Miscellaneous](./JavaScript/misc.md)
   
-### Node.js
+## Node.js
 
 - [Node.js](./Node/node.md)
 - [Express.js](./Node/express.md)
@@ -24,19 +22,11 @@
   - [User Sessions](./Node/sessions.md)
   - [Passport](./Node/passport.md)
 
-### React & Redux
-
-- [React](./React/react.md)
-
-### React Native
-
-## Database
-
-### PostgreSQL
+## PostgreSQL
 
 - [PostgreSQL](./PostgreSQL/postgresql.md)
 - [Associations](./PostgreSQL/associations.md)
 
 ## HTML/CSS
 
-### Bootstrap
+- Bootstrap
