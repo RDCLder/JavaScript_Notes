@@ -9,7 +9,11 @@
 - [jQuery](./JavaScript/jquery.md)
 - [API](./JavaScript/api.md)
 - [Miscellaneous](./JavaScript/misc.md)
-  
+
+## TypeScript
+
+- [General](./TypeScript/general.md)
+
 ## Node.js
 
 - [Node.js](./Node/node.md)
