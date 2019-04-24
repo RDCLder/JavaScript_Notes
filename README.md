@@ -12,7 +12,8 @@
 
 ## TypeScript
 
-- [General](./TypeScript/general.md)
+- [Getting Started](./TypeScript/general.md)
+- [Typing, Variables, & Functions](./TypeScript/typing.md)
 
 ## Node.js
 
